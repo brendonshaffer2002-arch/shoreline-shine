@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shoreline Shine | Boat & Auto Detailing Muskegon</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Poppins',sans-serif;background:#f6f9fc;color:#1b2a34}
+
+header{
+background:linear-gradient(135deg,#0f4c75,#1b6ca8);
+color:white;
+padding:30px 20px;
+text-align:center
+}
+
+.logo{display:flex;flex-direction:column;align-items:center;gap:8px}
+.logo svg{width:170px}
+.logo h1{margin:0;font-size:32px}
+
+nav{
+background:#0a2d45;
+display:flex;
+justify-content:center;
+gap:35px;
+padding:14px
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1504276048855-f3d7d7d6b5b6?auto=format&fit=crop&w=1600&q=80') center/cover;
+height:460px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px
+}
+
+.hero h1{font-size:44px;margin-bottom:10px}
+.hero p{font-size:20px;margin-bottom:25px}
+
+.cta{
+background:#ffd23f;
+border:none;
+padding:16px 34px;
+font-size:18px;
+font-weight:700;
+border-radius:8px;
+cursor:pointer
+}
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:70px 20px
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:32px
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+text-align:center
+}
+
+.card h3{margin-top:10px}
+
+.pricing{
+background:white;
+border-radius:12px;
+padding:35px;
+box-shadow:0 8px 20px rgba(0,0,0,.08)
+}
+
+.pricing ul{list-style:none;padding:0}
+.pricing li{padding:12px 0;border-bottom:1px solid #eee}
+
+.deals{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:35px
+}
+
+.deal{
+background:#e9f4ff;
+padding:30px;
+border-radius:10px;
+text-align:center
+}
+
+.estimator{
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+margin-top:50px;
+text-align:center
+}
+
+.estimator input,.estimator select{
+padding:12px;
+margin:10px;
+font-size:16px;
+border-radius:6px;
+border:1px solid #ccc
+}
+
+.estimator button{
+background:#1b6ca8;
+color:white;
+border:none;
+padding:12px 26px;
+border-radius:6px;
+font-size:16px;
+cursor:pointer
+}
+
+.result{
+margin-top:20px;
+font-size:22px;
+font-weight:700
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px
+}
+
+.review{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 6px 16px rgba(0,0,0,.08)
+}
+
+.booking{
+background:#0f4c75;
+color:white;
+border-radius:12px;
+text-align:center;
+padding:60px 20px
+}
+
+.booking button{
+background:#ffd23f;
+border:none;
+padding:16px 34px;
+font-size:18px;
+font-weight:700;
+border-radius:8px;
+cursor:pointer
+}
+
+.contact{text-align:center;margin-top:40px}
+
+footer{
+background:#0a2d45;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px
+}
+
+.note{font-size:14px;color:#666;margin-top:10px}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+
+<rect x="20" y="65" width="80" height="20" rx="6" fill="#ffffff"/>
+<polygon points="35,65 55,50 80,50 95,65" fill="#ffffff"/>
+<circle cx="40" cy="88" r="7" fill="#0f4c75"/>
+<circle cx="80" cy="88" r="7" fill="#0f4c75"/>
+
+<polygon points="120,75 180,75 165,95 105,95" fill="#3ec6ff" />
+<line x1="120" y1="75" x2="150" y2="60" stroke="#3ec6ff" stroke-width="3"/>
+
+<polygon points="150,35 155,48 168,48 158,55 162,68 150,60 138,68 142,55 132,48 145,48" fill="#ffd23f"/>
+
+</svg>
+
+<h1>Shoreline Shine</h1>
+<p>Boat & Auto Detailing</p>
+
+</div>
+
+</header>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#estimate">Price Estimate</a>
+<a href="#booking">Book</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+
+<h1>Your Boat Deserves to Shine</h1>
+
+<p>Professional boat washing, polishing, and oxidation removal in the Muskegon area.</p>
+
+<button class="cta" onclick="document.getElementById('booking').scrollIntoView()">Book Your Detail</button>
+
+</section>
+
+<section class="section" id="services">
+
+<h2>Professional Detailing Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Boat Wash</h3>
+<p>Remove dirt, lake scum, algae, and water spots. Perfect for keeping your boat clean during the season.</p>
+</div>
+
+<div class="card">
+<h3>Gelcoat Polish</h3>
+<p>Restore gloss and remove fading caused by sun damage and oxidation.</p>
+</div>
+
+<div class="card">
+<h3>Full Boat Detail</h3>
+<p>Complete wash, polish, and protective wax to bring your boat back to life.</p>
+</div>
+
+<div class="card">
+<h3>Auto Detailing</h3>
+<p>Interior and exterior detailing for cars, trucks, and SUVs.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="pricing">
+
+<h2>Typical Pricing</h2>
+
+<div class="pricing">
+
+<ul>
+
+<li>Boat Wash — starting around $100+</li>
+
+<li>Machine Polish / Oxidation Removal — typically $15–$30 per foot</li>
+
+<li>Full Boat Detail — usually $400–$900+</li>
+
+<li>Interior Boat Cleaning — starting around $120+</li>
+
+<li>Full Auto Detail — $200–$320</li>
+
+</ul>
+
+<p class="note">*Boats over 20ft are typically priced per foot.</p>
+<p class="note">*Exact pricing depends on boat size, oxidation level, and condition.</p>
+
+</div>
+
+<h2 style="margin-top:60px">Popular Service Packages</h2>
+
+<div class="deals">
+
+<div class="deal">
+<h3>Season Opener Detail</h3>
+<p>Perfect for boats coming out of winter storage.</p>
+<p>Wash + polish + wax protection.</p>
+</div>
+
+<div class="deal">
+<h3>Dockside Wash</h3>
+<p>Quick mid-season wash to remove lake grime.</p>
+<p>Starting around $120+</p>
+</div>
+
+<div class="deal">
+<h3>Oxidation Restoration</h3>
+<p>Heavy polish restoring faded gelcoat to a deep shine.</p>
+</div>
+
+<div class="deal">
+<h3>Monthly Maintenance</h3>
+<p>Keep your boat spotless all season with regular washes.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="estimate">
+
+<div class="estimator">
+
+<h2>Boat Detail Price Estimator</h2>
+
+<p>Enter your boat length and oxidation level for a quick estimate.</p>
+
+<input type="number" id="length" placeholder="Boat Length (ft)">
+
+<select id="condition">
+<option value="15">Light Oxidation</option>
+<option value="20">Moderate Oxidation</option>
+<option value="28">Heavy Oxidation</option>
+</select>
+
+<button onclick="estimatePrice()">Estimate Price</button>
+
+<div class="result" id="result"></div>
+
+<p class="note">*Estimate only. Final quote provided after inspection.</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>What Customers Say</h2>
+
+<div class="testimonials">
+
+<div class="review">“My boat looked brand new after the polish. Highly recommend.”</div>
+
+<div class="review">“Fast service and amazing shine. Will definitely book again.”</div>
+
+<div class="review">“Removed years of oxidation from my pontoon.”</div>
+
+</div>
+
+</section>
+
+<section class="booking" id="booking">
+
+<h2>Book Your Detail</h2>
+
+<p>Schedule your boat or vehicle detailing online.</p>
+
+<a href="https://calendly.com/shorelineshine" target="_blank">
+<button>Schedule Appointment</button>
+</a>
+
+</section>
+
+<section class="section contact" id="contact">
+
+<h2>Contact</h2>
+
+<p><strong>Phone:</strong> 810-300-6435</p>
+
+<p><strong>Email:</strong> shorelineshine@outlook.com</p>
+
+<p><strong>Service Area:</strong></p>
+
+<p>Muskegon • Grand Haven • Spring Lake • Whitehall</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Shoreline Shine Detailing</p>
+
+</footer>
+
+<script>
+
+function estimatePrice(){
+
+let length=document.getElementById('length').value
+let rate=document.getElementById('condition').value
+
+if(!length){
+ document.getElementById('result').innerText="Please enter boat length";
+ return;
+}
+
+let estimate=length*rate
+
+let low=Math.round(estimate*0.9)
+let high=Math.round(estimate*1.15)
+
+ document.getElementById('result').innerText="Estimated Price Range: $"+low+" - $"+high
+
+}
+
+</script>
+
+</body>
+</html>
